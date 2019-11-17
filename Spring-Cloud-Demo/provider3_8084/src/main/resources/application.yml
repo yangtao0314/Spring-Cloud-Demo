@@ -1,0 +1,53 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: provider3
+  devtools:
+    restart:
+      enabled: true  #是否支持热部署+
+  #  datasource:
+  #    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  #    url: jdbc:sqlserver://192.168.124.188:1433;DatabaseName=YwtLedgerDb
+  #    username: sa
+  #    password: 123456
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1/ywtcardb?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    druid:
+      min-idle: 5                                 #最小连接数
+      initial-size: 10                            #初始连接数
+      max-active: 15                              #最大连接数
+      max-wait: 1000                              #最大等待时长
+eureka:
+  client:
+    service-url:
+      #      defaultZone: http://user:123@peer2:8762/eureka/,http://user:123@peer1:8761/eureka/
+      defaultZone: http://root:123456@localhost:8080/eureka/
+  instance:
+    prefer-ip-address: true
+#security:
+#  oauth2:
+#    client:
+#      client-id: bd1c0a783ccdd1c9b9e4
+#      client-secret: 1a9030fbca47a5b2c28e92f19050bb77824b5ad1
+#      access-token-uri: https://github.com/login/oauth/access_token
+#      user-authorization-uri: https://github.com/login/oauth/authorize
+#      client-authentication-scheme: form
+#    resource:
+#      user-info-uri: https://api.github.com/user
+#      prefer-token-info: false
+#  basic:
+#    enabled: true
+#  user:
+#    name: provider
+#    password: 123456
+mybatis-plus:
+  type-aliases-package: demo
+  mapper-locations: classpath:mapper/*.xml
+  global-config:
+    db-config:
+      db-type: mysql

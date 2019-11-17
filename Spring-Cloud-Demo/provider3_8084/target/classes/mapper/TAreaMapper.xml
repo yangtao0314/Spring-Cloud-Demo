@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.t_area.mapper.TAreaMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="demo.t_area.entity.TArea">
+        <id column="AreaId" property="AreaId"/>
+        <result column="AreaName" property="AreaName"/>
+        <result column="AreaParent" property="AreaParent"/>
+        <result column="OrderCode" property="OrderCode"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        AreaId, AreaName, AreaParent, OrderCode
+    </sql>
+
+</mapper>

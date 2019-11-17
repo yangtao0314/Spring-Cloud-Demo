@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.carbase.mapper.CarBaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="demo.carbase.pojo.CarBase">
+        <id column="Id" property="Id"/>
+        <result column="CarPlateType" property="CarPlateType"/>
+        <result column="CarPlateNum" property="CarPlateNum"/>
+        <result column="DepId" property="DepId"/>
+        <result column="CarBrand" property="CarBrand"/>
+        <result column="CarType" property="CarType"/>
+        <result column="CarColor" property="CarColor"/>
+        <result column="PersonCount" property="PersonCount"/>
+        <result column="DisPlaceMent" property="DisPlaceMent"/>
+        <result column="FactoryTime" property="FactoryTime"/>
+        <result column="Organization" property="Organization"/>
+        <result column="Fuel" property="Fuel"/>
+        <result column="Power" property="Power"/>
+        <result column="CarStatus" property="CarStatus"/>
+        <result column="CarCurState" property="CarCurState"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, CarPlateType, CarPlateNum, DepId, CarBrand, CarType, CarColor, PersonCount, DisPlaceMent, FactoryTime,
+        Organization, Fuel, Power, CarStatus, CarCurState
+    </sql>
+
+</mapper>

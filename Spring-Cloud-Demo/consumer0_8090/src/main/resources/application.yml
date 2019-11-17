@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: consumer
+  devtools:
+    restart:
+      enabled: true  #是否支持热部署
+server:
+  port: 8081
+#  port: 8090
+eureka:
+  client:
+    service-url:
+      #      defaultZone: http://user:123@peer2:8762/eureka/,http://user:123@peer1:8761/eureka/
+      defaultZone: http://root:123456@localhost:8080/eureka/
+  instance:
+    prefer-ip-address: true
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: consumer0
+#    password: 123456
+logging:
+  config: classpath:logback-spring.xml
+  file: D:/log/consumer0_8083.log
+provider:
+  username: service
+  password: 123456
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+feign:
+  hystrix:
+    enabled: true
+ribbon:
+  eureka:
+    enabled: true

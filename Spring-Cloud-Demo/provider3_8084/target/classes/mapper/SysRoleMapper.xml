@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.sysrole.mapper.SysRoleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="demo.sysrole.entity.SysRole">
+        <id column="ID" property="id"/>
+        <result column="ROLE_ID" property="roleId"/>
+        <result column="ROLE_NAME" property="roleName"/>
+        <result column="DESCRIPTION" property="description"/>
+        <result column="ROLE_TYPE" property="roleType"/>
+        <result column="TIME_STAMP" property="timeStamp"/>
+        <result column="STATE" property="state"/>
+        <result column="IS_DELETE" property="isDelete"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, ROLE_ID, ROLE_NAME, DESCRIPTION, ROLE_TYPE, TIME_STAMP, STATE, IS_DELETE
+    </sql>
+
+</mapper>

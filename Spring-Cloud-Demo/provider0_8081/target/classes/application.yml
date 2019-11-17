@@ -1,0 +1,41 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: provider
+  security:
+    user:
+      name: service
+      password: 123456
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 123
+    url: jdbc:mysql://127.0.0.1/demo?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: org.gjt.mm.mysql.Driver
+  devtools:
+    restart:
+      enabled: true  #是否支持热部署
+  redis:
+    host: localhost
+    port: 6379
+    database: 10
+eureka:
+  client:
+    service-url:
+      #      defaultZone: http://user:123@peer2:8762/eureka/,http://user:123@peer1:8761/eureka/
+      defaultZone: http://root:123456@localhost:8080/eureka/
+  instance:
+    prefer-ip-address: true
+#mybatis:
+#  type-aliases-package: cn.demo.service0
+#  mapper-locations: classpath:mapper/*.xml
+logging:
+  file: D:/log/provider0_8081.log
+  config: classpath:logback-spring.xml
+mybatis-plus:
+  global-config:
+    db-config:
+      db-type: mysql
+  type-aliases-package: cn.demo.service0
+  mapper-locations: classpath:mapper/*.xml

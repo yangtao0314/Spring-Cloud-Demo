@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.department.mapper.DepartmentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="demo.department.entity.Department">
+        <id column="Id" property="Id"/>
+        <result column="DepName" property="DepName"/>
+        <result column="DepAddress" property="DepAddress"/>
+        <result column="DepType" property="DepType"/>
+        <result column="DepLevel" property="DepLevel"/>
+        <result column="NumberAll" property="NumberAll"/>
+        <result column="NumberTrue" property="NumberTrue"/>
+        <result column="NumberLeader" property="NumberLeader"/>
+        <result column="NumberLeaderChu" property="NumberLeaderChu"/>
+        <result column="CarNumberAll" property="CarNumberAll"/>
+        <result column="CarNumberTrue" property="CarNumberTrue"/>
+        <result column="ImgOrg" property="ImgOrg"/>
+        <result column="ImgCheck" property="ImgCheck"/>
+        <result column="ImgThree" property="ImgThree"/>
+        <result column="OrgId" property="OrgId"/>
+        <result column="OrgParent" property="OrgParent"/>
+        <result column="OrgType" property="OrgType"/>
+        <result column="OrderCode" property="OrderCode"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, DepName, DepAddress, DepType, DepLevel, NumberAll, NumberTrue, NumberLeader, NumberLeaderChu, CarNumberAll,
+        CarNumberTrue, ImgOrg, ImgCheck, ImgThree, OrgId, OrgParent, OrgType, OrderCode
+    </sql>
+
+</mapper>

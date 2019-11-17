@@ -1,0 +1,39 @@
+{
+  "车辆信息": {
+    "id": "akcnjkahfk",
+    "carPlateType": "公",
+    "carPlateNum": "桥西区",
+    "depId": "fdgfdsafd",
+    "carBrand": "2",
+    "carType": "2",
+    "carColor": "3",
+    "personCount": "23",
+    "disPlaceMent": "312",
+    "factoryTime": "2017-09-28T17:07:05",
+    "organization": "34",
+    "fuel": "2",
+    "power": "234",
+    "carStatus": "1",
+    "carCurState": "2"
+  },
+  "单位信息": {
+    "id": "afasfasdfg",
+    "depName": "省政府",
+    "depAddress": "桥西区",
+    "depType": "1",
+    "depLevel": "2",
+    "numberAll": "2",
+    "numberTrue": "3",
+    "numberLeader": "23",
+    "numberLeaderChu": "312",
+    "carNumberAll": "123",
+    "carNumberTrue": "34",
+    "imgOrg": "adasd",
+    "imgCheck": "asdasd",
+    "imgThree": "ImgThreeImgThree",
+    "orgId": "OrgIdOrgId",
+    "orgParent": "OrgParentOrgParent",
+    "orgType": "2",
+    "orderCode": "13"
+  }
+}

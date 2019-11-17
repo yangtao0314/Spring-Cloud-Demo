@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.cardriver.mapper.CarDriverMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="demo.cardriver.entity.CarDriver">
+        <id column="Id" property="Id"/>
+        <result column="DriverName" property="DriverName"/>
+        <result column="DepId" property="DepId"/>
+        <result column="DriverSex" property="DriverSex"/>
+        <result column="DriverBirth" property="DriverBirth"/>
+        <result column="DriverWorkDate" property="DriverWorkDate"/>
+        <result column="DriverInitDate" property="DriverInitDate"/>
+        <result column="DriverPolity" property="DriverPolity"/>
+        <result column="DriverHealth" property="DriverHealth"/>
+        <result column="DriverMobile" property="DriverMobile"/>
+        <result column="DriverPhone" property="DriverPhone"/>
+        <result column="DriverPeople" property="DriverPeople"/>
+        <result column="DriverInseries" property="DriverInseries"/>
+        <result column="DriverState" property="DriverState"/>
+        <result column="DriverCard" property="DriverCard"/>
+        <result column="DriverAllow" property="DriverAllow"/>
+        <result column="DriverExpire" property="DriverExpire"/>
+        <result column="DriverPhoto" property="DriverPhoto"/>
+        <result column="DriverCardImg" property="DriverCardImg"/>
+        <result column="PeopleCardImgF" property="PeopleCardImgF"/>
+        <result column="PeopleCardImgB" property="PeopleCardImgB"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, DriverName, DepId, DriverSex, DriverBirth, DriverWorkDate, DriverInitDate, DriverPolity, DriverHealth,
+        DriverMobile, DriverPhone, DriverPeople, DriverInseries, DriverState, DriverCard, DriverAllow, DriverExpire,
+        DriverPhoto, DriverCardImg, PeopleCardImgF, PeopleCardImgB
+    </sql>
+
+</mapper>

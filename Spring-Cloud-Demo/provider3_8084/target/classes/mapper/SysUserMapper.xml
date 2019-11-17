@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.sysuser.mapper.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="demo.sysuser.entity.SysUser">
+        <id column="Id" property="Id"/>
+        <result column="UserName" property="UserName"/>
+        <result column="Password" property="Password"/>
+        <result column="RealName" property="RealName"/>
+        <result column="DepId" property="DepId"/>
+        <result column="RoleId" property="RoleId"/>
+        <result column="UserSex" property="UserSex"/>
+        <result column="Email" property="Email"/>
+        <result column="Mobile" property="Mobile"/>
+        <result column="Phone" property="Phone"/>
+        <result column="BirthDate" property="BirthDate"/>
+        <result column="CreateUser" property="CreateUser"/>
+        <result column="CreateTime" property="CreateTime"/>
+        <result column="UpdateUser" property="UpdateUser"/>
+        <result column="UpdateTime" property="UpdateTime"/>
+        <result column="UserType" property="UserType"/>
+        <result column="OpenId" property="OpenId"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, UserName, Password, RealName, DepId, RoleId, UserSex, Email, Mobile, Phone, BirthDate, CreateUser,
+        CreateTime, UpdateUser, UpdateTime, UserType, OpenId
+    </sql>
+
+</mapper>

@@ -1,0 +1,33 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: provider
+  datasource:
+    url: jdbc:oracle:thin:@192.168.124.165:1521:orcl
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: root
+    password: root
+  devtools:
+    restart:
+      enabled: true  #是否支持热部署
+mybatis:
+  type-aliases-package: cn.demo.service1
+  mapper-locations: classpath:mapper/*.xml
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: service
+#    password: 123456
+eureka:
+  client:
+    service-url:
+      #      defaultZone: http://user:123@peer2:8762/eureka/,http://user:123@peer1:8761/eureka/
+      defaultZone: http://root:123456@localhost:8080/eureka/
+  instance:
+    prefer-ip-address: true
+logging:
+  file: D:/log/provider1_8082.log
+  config: classpath:logback-spring.xml

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.sys_menu.mapper.SysMenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="demo.sys_menu.entity.SysMenu">
+        <id column="Id" property="Id"/>
+        <result column="MenuName" property="MenuName"/>
+        <result column="Pid" property="Pid"/>
+        <result column="LinkUrl" property="LinkUrl"/>
+        <result column="ICONCLASS" property="iconclass"/>
+        <result column="IMGNAME" property="imgname"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, MenuName, Pid, LinkUrl, ICONCLASS, IMGNAME
+    </sql>
+
+</mapper>

@@ -1,0 +1,41 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:8080/eureka/
+spring:
+  application:
+    name: gateway
+server:
+  port: 9093
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: gateway
+#    password: 123456
+zuul:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+  servlet-path: /file
+  routes:
+    upload: /load/**
+  sensitive-headers: Access-Control-Allow-Origin
+  ignored-headers: Access-Control-Allow-Origin,H-APP-Id,Token,APPToken
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 60000
+
+#zuul:
+#  routes:
+#    service0: /service0/**
+
+#    service1: /service1/**

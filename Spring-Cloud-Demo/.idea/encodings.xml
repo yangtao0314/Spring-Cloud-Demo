@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SkipSchool" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-9060" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer0_8090" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discovery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix_dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lisi_service_9061" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinpinduo_service_8089" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider0_8081" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider1_8082" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider2_8083" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider3_8084" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider4_8085" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

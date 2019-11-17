@@ -1,0 +1,21 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: provider5
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.124.188:3306/ywt_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: master
+    password: '!@#123'
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: demo
+#eureka:
+#  client:
+#    service-url:
+#      #      defaultZone: http://user:123@peer2:8762/eureka/,http://user:123@peer1:8761/eureka/
+#      defaultZone: http://root:123456@localhost:8080/eureka/
+#  instance:
+#    prefer-ip-address: true

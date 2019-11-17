@@ -1,0 +1,11 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: hystrix
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: hystrix
+#    password: 123456

@@ -1,0 +1,27 @@
+server:
+  port: 9060
+spring:
+  application:
+    name: config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:properties/
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://gitee.com/fox9916/springCloudConfig
+#          search-paths: /**
+#      label: master
+#      username: fox9916
+#      password: "********"
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:8080/eureka/
+    register-with-eureka: false
+    fetch-registry: false

@@ -23,7 +23,7 @@
         <module>lisi_service_9061</module>
         <module>pinpinduo_service_8089</module>
     </modules>
-
+    <!--xxx-->
     <!--以下dependency来自官方-->
     <parent>
         <groupId>org.springframework.boot</groupId>
